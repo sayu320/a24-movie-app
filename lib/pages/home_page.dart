@@ -1,4 +1,6 @@
 import 'package:a24_movie_app/data/a24data.dart';
+import 'package:a24_movie_app/pages/movies/movie_page.dart';
+import 'package:a24_movie_app/pages/shows/shows_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -16,6 +18,7 @@ class HomePage extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
+          //appbar containing a24 logo and user profile icon
           Container(
               height: 50,
               child: Padding(
@@ -34,6 +37,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               )),
+              //movies and shows
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Container(
@@ -42,7 +46,9 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder:(context) => const MoviePage(),));
+                      },
                       child: const Text(
                         'Movies',
                         style: TextStyle(
@@ -51,7 +57,9 @@ class HomePage extends StatelessWidget {
                             fontWeight: FontWeight.w500),
                       )),
                   InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder:(context) => const ShowsPage(),));
+                      },
                       child: const Text('Shows',
                           style: TextStyle(
                               color: Colors.white,
@@ -61,6 +69,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+
+          //list of images
           Expanded(
               child: SingleChildScrollView(
             reverse: true,

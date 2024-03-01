@@ -23,10 +23,14 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: Image.asset('lib/assets/a24logo2.jpg'),
-      ),
+      backgroundColor: Colors.black,
+      body: Stack(children: [
+        Center(
+            child: Image.asset(
+          'lib/assets/a24icon.png',
+        )),
+        const Center(child: CircularProgressIndicator())
+      ]),
     );
   }
 }

@@ -36,7 +36,7 @@ List<A24Description> moviesAndShows = [
 
   A24Description(
     id: 1,
-    image: 'lib/assets/Aftersun.jpg',
+    image: 'lib/assets/Aftersun movie posters.jpg',
     name: 'Aftersun(2022)',
     genre: 'Drama',
     overView:
@@ -192,7 +192,7 @@ List<A24Description> moviesAndShows = [
 
     A24Description(
     id: 14,
-    image: 'lib/assets/The Killing of a Sacred Deer.jpg',
+    image: 'lib/assets/the killing of a sacred deer poster.jpg',
     name: 'The Killing of a Sacred Deer(2017)',
     genre: 'Drama,Thriller,Mystery',
     overView:
@@ -276,7 +276,7 @@ List<A24Description> moviesAndShows = [
 
   A24Description(
     id: 21,
-    image: 'lib/assets/Beef tvshow.jpg',
+    image: 'lib/assets/beef poster.jpg',
     name: 'Beef(2023)',
     genre: 'Comedy,Drama',
     overView:
@@ -350,7 +350,7 @@ List<A24Description> a24movies =[
 
   A24Description(
     id: 1,
-    image: 'lib/assets/Aftersun.jpg',
+    image: 'lib/assets/Aftersun movie posters.jpg',
     name: 'Aftersun(2022)',
     genre: 'Drama',
     overView:
@@ -506,7 +506,7 @@ List<A24Description> a24movies =[
 
     A24Description(
     id: 14,
-    image: 'lib/assets/The Killing of a Sacred Deer.jpg',
+    image: 'lib/assets/the killing of a sacred deer poster.jpg',
     name: 'The Killing of a Sacred Deer(2017)',
     genre: 'Drama,Thriller,Mystery',
     overView:
@@ -592,7 +592,7 @@ List<A24Description> a24movies =[
 List<A24Description> a24shows =[
   A24Description(
     id: 0,
-    image: 'lib/assets/Beef tvshow.jpg',
+    image: 'lib/assets/beef poster.jpg',
     name: 'Beef(2023)',
     genre: 'Comedy,Drama',
     overView:
